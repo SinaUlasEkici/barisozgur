@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=,, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title></title>
 </head>
 <body>
@@ -16,15 +17,15 @@
                 <div class="container">
                     <div class="header-novbar">
                         <div class="header-logo">
-                            <p>BARIS ÖZGÜR</p>
+                            <p>BARIŞ ÖZGÜR</p>
                         </div>
                         <div class="header-menu">
-                            <ul>
-                                <li><a href="#">ANA SAYFA</a> </li>
-                                <li><a href="#">HAKKIMDA</a></li>
-                                <li><a href="#">GALERİ</a></li>
-                                <li><a href="#">İLETİŞİM</a></li>
+                            <ul id="menuItems">
+                                <li><a href="#1">HAKKIMDA</a></li>
+                                <li><a href="#2">GALERİ</a></li>
+                                <li><a href="#3">İLETİŞİM</a></li>
                             </ul>
+                            <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle();"></i>
                         </div>
                     </div>
                     <div class="header-text">
@@ -40,22 +41,26 @@
 
     <!--HAKKIMDA-->
     <section id="about">
-        <div class="about">
+        <div id="1" class="about">
             <div class="container">
                 <div class="about-title">
                     <h2>HAKKIMDA</h2>
                 </div>
                 <div class="about-content">
-                    <div class="about-image">
-                        <img src="isikk.jpeg" height="567,5" width="800">
+                    <div class="about-image anime-left">
+                        <img src="isikk.jpeg" height="1066,66" width="756,66">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text anime-right">
                         <h4>BEN KİMİM</h4>
                     <div id="moto">
                         <i class="fa-solid fa-motorcycle"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident quod ipsam nulla ipsum nam!<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ea?</p>
+                    <p> &nbsp 2016 yılında Stunt sporuna başladım. Küba marka motosikletimi bu iş için uygun hale getirdikten hemen sonra
+                    çalışmalara başladım. Bu motoru sırasıyla Kawasaki Ninja 250Sl ve 2004 model Kawasaki Ninja ZX6R takip etti. Bu spora
+                    başladığım ilk yıldan beri aktif olarak gösterilerde ve yarışmalarda yer alıyorum. <br>
+                    &nbsp Ulusal yarışlarda podyuma çıkmanın yanı sıra uluslararası yarışlara katılabilen tek Türk sporcu olarak ilk yılımda 4. elde ettim.
+                    <br>
+                    &nbsp Antrenmanlar, gösteriler ve yarışlardan kalan zamanımı kendi atölyemde motosikletimi hazırlamakla geçiririm.</p>
                     </div>
                 </div>
             </div>
@@ -66,74 +71,74 @@
     <!--GALERİ-->
     
     <section id="galeri">
-        <div class="galeri">
-            <div class="galeri-item">
+        <div id="2" class="galeri">
+            <div class="galeri-item ani1">
                 <img src="01.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-wrench"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani2">
                 <img src="02.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani3">
                 <img src="03.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani4">
                 <img src="04.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani5">
                 <img src="05.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani6">
                 <img src="06.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-flag-checkered"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani7">
                 <img src="07.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-flag-checkered"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani8">
                 <img src="08.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani9">
                 <img src="09.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-motorcycle"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani10">
                 <img src="10.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-trophy"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani11">
                 <img src="11.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-flag-checkered"></i>
                 </div>
             </div>
-            <div class="galeri-item">
+            <div class="galeri-item ani12">
                 <img src="12.jpeg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-flag-checkered"></i>
@@ -147,19 +152,19 @@
     <!--İLETİŞİM-->
 
     <section id="contact">
-        <div class="contact">
+        <div id="3"class="contact">
             <div class="container">
                 <div class="page-title">
                     <h2>İLETİŞİM</h2>
                 </div>
                 <div class="contact-content">
-                    <div class="contact-item">
+                    <div class="contact-item anime-top">
                         <i class="fa-solid fa-phone-flip"></i>
                         <p>+90 543 699 ** **</p>
                         <br>
                         <p>+90 531 028 ** **</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item anime-bottom">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>
                             Camiikebir Mahallesi <br>
@@ -167,7 +172,7 @@
                             No:55
                         </p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item anime-top">
                         <i class="fa-solid fa-paper-plane"></i>
                         <p>
                             Baris.ozgur.16@icloud.com
@@ -189,22 +194,82 @@
                         <h2>Bize Ulaşın</h2>
                     </div>
                     <div class="footer-copyright">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, hic!
-                        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit voluptatum officia deserunt ducimus sit?
+                        <p>Copyright Sina Ulaş Ekici 2022. Tüm hakları saklıdır. Sitede yer alan görsellerin tamamı tarafımıza ait olup izinsiz kopyalanması,
+                            çoğaltılması ve yayınlanması kesinlikle yasaktır.
                         </p>
                         <br>
                     </div>
                     <nav class="footer-social">
                         <ul>
                             <li>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://instagram.com/barisozgur.16?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@baris.ozgur.16"  target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://www.youtube.com/channel/UCd4rdXmze4tRE32PlYPQtVw"  target="_blank"><i class="fa-brands fa-youtube"></i></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </footer>
+        <!--FOOTER-->
+
+        <script>
+            window.sr=ScrollReveal();
+
+            sr.reveal( '.anime-left',{
+                origin:'left',
+                duration:1000,
+                distance:'25rem',
+                delay:300
+            });
+            sr.reveal( '.anime-right',{
+                origin:'right',
+                duration:1000,
+                distance:'25rem',
+                delay:600
+            });
+            sr.reveal( '.anime-top',{
+                origin:'top',
+                duration:1000,
+                distance:'25rem',
+                delay:600
+            });
+            sr.reveal( '.anime-bottom',{
+                origin:'bottom',
+                duration:1000,
+                distance:'25rem',
+                delay:600
+            });
+        </script>
+
+        <script>
+            ScrollReveal().reveal('.ani1',{delay:250});
+            ScrollReveal().reveal('.ani2',{delay:500});
+            ScrollReveal().reveal('.ani3',{delay:750});
+            ScrollReveal().reveal('.ani4',{delay:1000});
+            ScrollReveal().reveal('.ani5',{delay:1250});
+            ScrollReveal().reveal('.ani6',{delay:1500});
+            ScrollReveal().reveal('.ani7',{delay:1750});
+            ScrollReveal().reveal('.ani8',{delay:2000});
+            ScrollReveal().reveal('.ani9',{delay:2250});
+            ScrollReveal().reveal('.ani10',{delay:2500});
+            ScrollReveal().reveal('.ani11',{delay:2750});
+            ScrollReveal().reveal('.ani12',{delay:3000});
+        </script>
+
+
+        <script>
+            var menuItems=document.getElementById('menuItems');
+            menuItems.style.maxHeight="0px";
+
+            function menuToggle(){
+                if(menuItems.style.maxHeight=="0px"){
+                    menuItems.style.maxHeight="200px";
+                }
+                else{
+                    menuItems.style.maxHeight="0px"
+                }
+            }
+        </script>
 </body>
 </html>
